@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Brand Colors ─────────────────────────────────── */
+  --color-primary: #f2b90d;
+  --color-primary-hover: #f4c025;
+
+  /* Landing / Shared Dark Theme */
+  --color-background-dark: #1a1614;
+  --color-mocha-accent: #2a2420;
+  --color-beige-light: #e8e4db;
+
+  /* Chat Page */
+  --color-coffee-dark: #3d2b1f;
+  --color-coffee-rich: #2a1d15;
+  --color-beige-card: #fdfaf3;
+  --color-student-bubble: #efe9d9;
+
+  /* Upload / Image Analysis Page */
+  --color-luxury-beige: #f5f3ef;
+  --color-deep-bronze: #3d3428;
+
+  /* Audio Page */
+  --color-cocoa-deep: #18140c;
+  --color-sand-light: #fdfcf7;
+
+  /* ─── Fonts ─────────────────────────────────────────── */
+  --font-display: "Lexend", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-urdu: "Noto Naskh Arabic", sans-serif;
+
+  /* ─── Border Radii ───────────────────────────────────── */
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+/* ─── Global Base ──────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Typography Utilities ─────────────────────────────── */
+.serif-title {
+  font-family: "Playfair Display", serif;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+}
+
+.gold-glow {
+  text-shadow: 0 0 15px rgba(242, 185, 13, 0.3);
+}
+
+/* ─── Background Patterns ──────────────────────────────── */
+.architectural-bg {
+  background-image: radial-gradient(circle at 2px 2px,
+      rgba(242, 185, 13, 0.05) 1px,
+      transparent 0);
+  background-size: 40px 40px;
+}
+
+.audio-gradient-bg {
+  background: radial-gradient(circle at center, #2c2516 0%, #18140c 100%);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #2c251d 0%, #4a3f30 50%, #2c251d 100%);
+}
+
+/* ─── Glass Effects ────────────────────────────────────── */
+.glass-panel {
+  background: rgba(253, 252, 247, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(238, 189, 43, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* ─── Custom Scrollbar ─────────────────────────────────── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d1cfc7;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #f4c025;
+}
+
+/* ─── Material Symbols ─────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+  line-height: 1;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Study with Ayesha - Premium AI Chat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Noto+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                        "coffee-dark": "#3d2b1f",
+                        "coffee-rich": "#2a1d15",
+                        "beige-card": "#fdfaf3",
+                        "student-bubble": "#efe9d9",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d1cfc7;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #f4c025;
+        }
+    </style>
+</head>
+<body class="bg-coffee-dark text-[#181611] min-h-screen flex flex-col">
+<header class="w-full px-8 py-4 flex items-center justify-between border-b border-white/10 bg-coffee-rich/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-coffee-rich text-xl">architecture</span>
+</div>
+<h1 class="text-white text-lg font-bold tracking-tight">Study with Ayesha</h1>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-white/70 hover:text-primary text-sm font-medium transition-colors" href="#">Curriculum</a>
+<a class="text-white/70 hover:text-primary text-sm font-medium transition-colors" href="#">Archive</a>
+<a class="text-white/70 hover:text-primary text-sm font-medium transition-colors" href="#">Insights</a>
+</nav>
+<div class="h-6 w-px bg-white/10"></div>
+<div class="flex items-center gap-4">
+<button class="text-white/80 hover:text-white">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center overflow-hidden">
+<img alt="User" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH4i3jwufNog1sFLn7vN1zRH3Q_9QxpQX7cTS1thEhPyjY_GqnjlNlSBvimZnimmS0ugIcTtC_qprYXiu-x1nIbLdOJrqMulwYu3RC17Fg3TZYG0EIvdoYjsafF275V9vEsyxWJVXoG4P1O5Zec-VJZ1hzbtacfhAQ6GrSxSWCyp4NotWyxk_dLUPmeDzY9SbYqmkhMkwMUPomRyxDgi9uV5L3JDrlt8VbPnDEleC5TTDZiEU0egcAHc94sKZyZxjIajveknLyJY4"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-start py-8 px-4 w-full max-w-5xl mx-auto">
+<div class="w-full max-w-3xl mb-6 bg-coffee-rich/40 border border-white/5 rounded-2xl p-4 flex items-center gap-6">
+<div class="flex-1">
+<div class="flex justify-between items-end mb-2">
+<span class="text-white/60 text-xs font-medium uppercase tracking-widest">Architectural Principles: Module IV</span>
+<span class="text-primary text-xs font-bold">65% Completed</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="flex flex-col items-end border-l border-white/10 pl-6">
+<span class="text-white/40 text-[10px] uppercase font-bold">Session Time</span>
+<span class="text-white font-mono text-sm">24:12</span>
+</div>
+</div>
+<div class="w-full max-w-3xl bg-beige-card rounded-2xl shadow-2xl flex flex-col overflow-hidden h-[75vh] border border-white/20">
+<div class="px-6 py-4 border-b border-[#e6e3db] flex items-center justify-between bg-white/50">
+<div class="flex items-center gap-2">
+<div class="size-2 bg-green-500 rounded-full animate-pulse"></div>
+<span class="text-[#8a8060] text-xs font-bold uppercase tracking-tighter">Ayesha is Active</span>
+</div>
+<div class="bg-[#f0ede4] p-1 rounded-lg flex items-center">
+<button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-white shadow-sm text-coffee-rich">English</button>
+<button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider text-[#8a8060] hover:text-coffee-rich transition-colors">Arabic</button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-8 custom-scrollbar">
+<div class="flex gap-4 max-w-[85%]">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-coffee-rich text-xl">auto_awesome</span>
+</div>
+<div class="space-y-2">
+<p class="text-[11px] font-bold text-[#8a8060] uppercase tracking-widest ml-1">Ayesha (AI Tutor)</p>
+<div class="bg-white border border-[#f0ede4] p-4 rounded-xl rounded-tl-none shadow-sm text-[#3d2b1f] leading-relaxed">
+                        Welcome back. We were just discussing how <span class="text-primary font-semibold">coffee-toned palettes</span> can ground high-ceiling architectural spaces. Observe how the dark wood accents in this reference provide a visual anchor.
+                    </div>
+<div class="rounded-xl overflow-hidden border border-[#f0ede4] shadow-sm mt-3 group cursor-zoom-in">
+<img alt="Interior Architecture" class="w-full aspect-video object-cover" data-alt="Modern minimalist interior with warm wood and coffee tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF1JujsFfYW3Pl0kl48uMLzZdWJSmrDGnpXC3HxjB-LSJ_GqXIqj4Wd65U1ALxUP6YeXKm9yejuX7VkybVwbez24se-kFUqUGxqiQmu_389vy0SRHjmFGSUatnOLig36YCPJhh-EZ-2cFM-VOja0lacvxYyuj-Jx2RJb1EDeRkRK5AHFTYEVS7m9m5i9SVFOGAjRZJFC7Dxb_BDL1O6rPCoeoW5_V_FtEFsrEy7wq9pttLhMzYdwCDgIPyGLanKemLfaelsMPaBVQ"/>
+<div class="bg-white/90 px-3 py-2 text-[10px] text-[#8a8060] italic border-t border-[#f0ede4]">
+                            Reference: Villa Bronwood Interior Study (2023)
+                        </div>
+</div>
+</div>
+</div>
+<div class="flex flex-row-reverse gap-4 max-w-[85%] ml-auto">
+<div class="w-10 h-10 rounded-full bg-student-bubble border border-[#dcd7c9] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#8a8060]">person</span>
+</div>
+<div class="space-y-2 text-right">
+<p class="text-[11px] font-bold text-[#8a8060] uppercase tracking-widest mr-1">Student</p>
+<div class="bg-student-bubble border border-[#dcd7c9] p-4 rounded-xl rounded-tr-none shadow-sm text-[#3d2b1f] leading-relaxed">
+                        The visual grounding makes sense. How would this interact with natural light from large floor-to-ceiling windows? Wouldn't it absorb too much brightness?
+                    </div>
+</div>
+</div>
+<div class="flex gap-4 max-w-[85%]">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-coffee-rich text-xl">auto_awesome</span>
+</div>
+<div class="space-y-2">
+<p class="text-[11px] font-bold text-[#8a8060] uppercase tracking-widest ml-1">Ayesha (AI Tutor)</p>
+<div class="bg-white border border-[#f0ede4] p-4 rounded-xl rounded-tl-none shadow-sm text-[#3d2b1f] leading-relaxed">
+                        A sharp observation. The interplay depends on the <span class="italic">specularity</span> of the finish. Matte coffee tones absorb light, creating a cozy "den" effect, whereas satin finishes reflect ambient light, maintaining architectural depth without feeling heavy.
+                    </div>
+<div class="flex flex-wrap gap-2 mt-2">
+<button class="text-[10px] font-bold py-1.5 px-3 bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-all uppercase tracking-wide">Tell me about Specularity</button>
+<button class="text-[10px] font-bold py-1.5 px-3 bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-all uppercase tracking-wide">Matte vs Satin Analysis</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-[#e6e3db] bg-white">
+<div class="relative group">
+<div class="absolute -inset-0.5 bg-primary/20 rounded-xl blur opacity-0 group-focus-within:opacity-100 transition duration-300"></div>
+<div class="relative bg-white border-2 border-[#f0ede4] group-focus-within:border-primary rounded-xl flex items-end p-2 transition-all">
+<button class="p-2 text-[#8a8060] hover:text-primary transition-colors">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<textarea class="flex-1 bg-transparent border-none focus:ring-0 text-sm py-2 px-3 placeholder-[#b0a88e] text-coffee-rich resize-none min-h-[40px] max-h-[120px]" placeholder="Ask Ayesha about architectural depth..." rows="1"></textarea>
+<div class="flex items-center gap-2 mb-1 mr-1">
+<button class="p-2 text-[#8a8060] hover:text-primary transition-colors">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="bg-primary text-coffee-rich size-10 rounded-lg flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center mt-3 px-1">
+<div class="flex items-center gap-4">
+<span class="text-[10px] text-[#8a8060] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">info</span>
+                        Ayesha can browse architectural archives
+                    </span>
+</div>
+<span class="text-[10px] text-[#8a8060] font-medium uppercase tracking-widest">Architectural Assistant v2.4</span>
+</div>
+</div>
+</div>
+<footer class="mt-8 text-center">
+<p class="text-white/30 text-[10px] uppercase tracking-[0.2em] font-medium">
+            Part of the Premium Architectural Collective © 2024 Study with Ayesha
+        </p>
+</footer>
+</main>
+
+</body></html>

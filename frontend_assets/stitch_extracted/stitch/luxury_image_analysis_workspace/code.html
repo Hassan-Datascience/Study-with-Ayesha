@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luxury Image Analysis Workspace | Study with Ayesha</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e6b319",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211d11",
+                        "luxury-beige": "#f5f3ef",
+                        "deep-bronze": "#3d3428",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #2c251d 0%, #4a3f30 50%, #2c251d 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-deep-bronze selection:bg-primary/30">
+<div class="relative min-h-screen w-full luxury-gradient flex flex-col items-center">
+<header class="w-full max-w-[1200px] flex items-center justify-between px-6 py-6 text-white/90">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-xl flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined text-2xl font-bold">architecture</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-xl font-extrabold tracking-tight leading-none uppercase">Study with Ayesha</h1>
+<span class="text-[10px] uppercase tracking-[0.2em] font-medium opacity-70">Architectural AI Workspace</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">Library</a>
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="size-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="h-10 w-10 rounded-full border-2 border-primary/50 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile portrait of a professional architect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzV-eR_NT10aab2_4nu_iyE91LSfgHlpD_CpZymDpF8JO6pooaB4GHRatXg3ilb0WnNpu92Eo9ciJI9HhDwYSEdRnvqVytzA_pscWfzJ_QnfGocm-9yjK4Y8rbYzwDqNOSOlmLdrONtjxIpntfixADuKUX5M5dvqBe6U5X3t2rDBBt9Zzxotyu3-EcylTWvW2spMyWPCmTHC-GMT6U1cdfUaCakRWjrX3TmC-njQpgxhDgwBuR0d5Aoiqu0moXUj4XejWXlA933iI"/>
+</div>
+</div>
+</header>
+<main class="w-full max-w-[1000px] px-4 pb-20 mt-4">
+<div class="glass-card rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+<div class="px-10 py-8 border-b border- luxury-beige/50">
+<h2 class="text-3xl font-black text-deep-bronze tracking-tight">Luxury Image Analysis Workspace</h2>
+<p class="text-deep-bronze/60 text-lg mt-1">AI Architectural Analysis for focused learning</p>
+</div>
+<div class="p-10 flex flex-col gap-8">
+<div class="relative group">
+<div class="flex flex-col items-center justify-center gap-4 rounded-xl border-2 border-dashed border-primary/20 bg-luxury-beige/30 px-6 py-12 transition-all group-hover:bg-primary/5 group-hover:border-primary/40 cursor-pointer">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-4xl">cloud_upload</span>
+</div>
+<div class="text-center">
+<p class="text-deep-bronze text-xl font-bold">Upload Architectural Image</p>
+<p class="text-deep-bronze/50 text-sm mt-1">Drag and drop high-resolution JPG or PNG (max 20MB)</p>
+</div>
+<button class="mt-4 px-8 py-2.5 bg-deep-bronze text-white rounded-lg font-bold text-sm tracking-wide hover:bg-deep-bronze/90 transition-all shadow-lg">
+                            Select File
+                        </button>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-bold text-deep-bronze/80 uppercase tracking-widest text-xs">Analysis Preview</h3>
+<button class="text-xs font-bold text-red-600 flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-sm">delete</span> Remove
+                        </button>
+</div>
+<div class="w-full aspect-[16/9] rounded-xl overflow-hidden shadow-inner bg-gray-100 border border-luxury-beige">
+<img class="w-full h-full object-cover" data-alt="Modern luxury architectural villa with glass walls and minimalist pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1NhdXgLZJQQ3_wb-5ahVVUEwEM-0d-WtruE1MOgACU92OsDwhD0qBCS4Ol6HiATMa814-y0BANmr8HNWSjnUaMRx3X_mRwPRrS0p6QKBlqEFhE898QGu8kQj6P0ZDwNNFHbDXD6VYHK91HR0B421KrXC_6oHB7mv1oZN7cqRTCThFoTqKHpPawBiNayhFQ4clhK1H8t2XTRJX4tXCBK1P6zHtlTDuZgMlDHptQunCuOLFxDxJHHTJakb4D1SVe9wLg0IgqXb4DGk"/>
+</div>
+</div>
+<div class="flex justify-center pt-4">
+<button class="flex items-center gap-3 px-10 py-5 bg-primary text-background-dark rounded-xl font-extrabold text-lg shadow-[0_10px_30px_-10px_rgba(230,179,25,0.5)] hover:scale-[1.02] transition-transform active:scale-95">
+<span class="material-symbols-outlined font-bold">auto_awesome</span>
+                        Generate AI Explanation
+                    </button>
+</div>
+</div>
+<div class="bg-luxury-beige/50 p-10 border-t border-luxury-beige">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-bold text-deep-bronze flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">description</span>
+                            Architectural Insight
+                        </h3>
+<div class="flex items-center gap-4 bg-white px-4 py-2 rounded-full shadow-sm border border-luxury-beige">
+<button class="size-8 flex items-center justify-center text-deep-bronze hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+<div class="w-32 h-1 bg-luxury-beige rounded-full relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 bg-primary w-1/3"></div>
+</div>
+<span class="text-[10px] font-bold text-deep-bronze/50">0:42 / 2:15</span>
+<button class="size-8 flex items-center justify-center text-deep-bronze hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">settings</span>
+</button>
+</div>
+</div>
+<div class="bg-white/80 p-8 rounded-xl border border-luxury-beige shadow-sm">
+<div class="space-y-6 text-deep-bronze/80 leading-relaxed">
+<div>
+<h4 class="font-black text-sm uppercase tracking-widest text-primary mb-2">Design Philosophy</h4>
+<p>The structure exemplifies <strong>Contemporary Minimalism</strong>, utilizing a cantilevered roofline that creates a seamless transition between the interior luxury and the natural landscape. The use of floor-to-ceiling glazing maximizes solar gain while maintaining an ethereal lightness.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h4 class="font-black text-sm uppercase tracking-widest text-primary mb-2">Key Materials</h4>
+<ul class="list-disc pl-4 space-y-1 text-sm font-medium">
+<li>Reinforced white concrete slabs</li>
+<li>Low-E architectural glass</li>
+<li>Sustainable teak wood decking</li>
+<li>Polished limestone flooring</li>
+</ul>
+</div>
+<div>
+<h4 class="font-black text-sm uppercase tracking-widest text-primary mb-2">Spatial Dynamics</h4>
+<p class="text-sm">The open-plan layout encourages a "fluidity of movement," a core tenet of Ayesha's architectural pedagogy. The central atrium serves as a vertical light-well, illuminating the heart of the home.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-3">
+<button class="flex items-center gap-2 px-4 py-2 text-deep-bronze/60 hover:text-primary font-bold text-sm transition-colors">
+<span class="material-symbols-outlined text-sm">bookmark</span> Save to Library
+                        </button>
+<button class="flex items-center gap-2 px-4 py-2 text-deep-bronze/60 hover:text-primary font-bold text-sm transition-colors">
+<span class="material-symbols-outlined text-sm">share</span> Share Analysis
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-8 flex items-center justify-between text-white/40 text-xs font-bold uppercase tracking-[0.2em]">
+<div class="flex items-center gap-6">
+<span>Session ID: AS-8821</span>
+<span>Tokens: 1,420</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Study</a>
+</div>
+</footer>
+</main>
+</div>
+
+</body></html>
