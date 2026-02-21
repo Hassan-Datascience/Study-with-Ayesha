@@ -15,20 +15,8 @@ Never assume prior knowledge.
 Please keep your answers child-friendly and educational."""
 
 def get_best_model(task_type="text"):
-    """Dynamically fetches the best available model for the user's API key."""
-    try:
-        models = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
-        if not models:
-            return None
-        
-        # Try to find a flash model for speed, otherwise take the first available
-        for m in models:
-            if 'flash' in m.lower():
-                return m
-        return models[0]
-    except Exception:
-        # Fallback if list_models fails
-        return 'gemini-1.5-flash' if task_type == 'text' else 'gemini-1.5-flash'
+    """Returns the hardcoded working model natively supported by the API."""
+    return "gemini-2.0-flash-exp"
 
 def generate_chat_response(message: str, language: str) -> str:
     if not settings.GEMINI_API_KEY or settings.GEMINI_API_KEY == "your_gemini_api_key_here":
