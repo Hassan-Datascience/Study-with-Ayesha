@@ -16,7 +16,7 @@ Please keep your answers child-friendly and educational."""
 
 def get_best_model(task_type="text"):
     """Returns the hardcoded working model natively supported by the API."""
-    return "gemini-2.0-flash-exp"
+    return "gemini-1.5-flash-latest"
 
 def generate_chat_response(message: str, language: str) -> str:
     if not settings.GEMINI_API_KEY or settings.GEMINI_API_KEY == "your_gemini_api_key_here":
