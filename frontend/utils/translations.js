@@ -40,7 +40,7 @@ export const translations = {
         },
         chat: {
             welcome: "Welcome! I am Ayesha, your AI tutor. How can I help you today?",
-            placeholder: "Ask Ayesha about architectural depth...",
+            placeholder: "Ask Ayesha...",
             send: "Send",
             analyzing: "Analyzing...",
             active: "Ayesha is Active",
